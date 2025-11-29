@@ -6,6 +6,12 @@
 <title>veintidós</title>
 
 <style>
+  /* Evita highlight feo en iPhone */
+  * {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+  }
+
   body{
     margin:0;
     font-family: Arial, sans-serif;
@@ -49,6 +55,13 @@
     text-decoration:none;
     text-align:center;
     margin-top:12px;
+    display:inline-block;
+  }
+
+  button:active,
+  .link-boton:active {
+    transform:scale(0.98);
+    box-shadow:none;
   }
 
   button:hover, .link-boton:hover{
@@ -92,12 +105,19 @@
     text-align:center;
   }
 
+  h2{
+    text-align:center;
+    color:#ff4f8b;
+    margin-bottom:15px;
+  }
+
   .btn-volver{
     display:block;
     margin:30px auto 0 auto;
     background:linear-gradient(135deg, #ffc2d9, #ff8fb8);
   }
 
+  /* Corazones */
   .corazon{
     position:fixed;
     font-size:28px;
@@ -128,7 +148,7 @@
 
 </div>
 
-<!-- VEINTINUEVE (queda igual) -->
+<!-- VEINTINUEVE -->
 <div id="p29" class="pantalla">
   <div class="contenido-pantalla">
 
@@ -154,7 +174,7 @@ estoy más que orgullosa de vos y siempre voy a estarlo, siempre vas a tener un 
   </div>
 </div>
 
-<!-- ONCE (CENTRADO) -->
+<!-- ONCE -->
 <div id="p11" class="pantalla">
   <div class="contenido-pantalla centrado">
 
@@ -180,7 +200,7 @@ capaz estás canciones puedan explicar mejor la forma que me haces sentir 💗
   </div>
 </div>
 
-<!-- CEROTRES (CENTRADO) -->
+<!-- CEROTRES -->
 <div id="p03" class="pantalla">
   <div class="contenido-pantalla centrado">
 
@@ -231,4 +251,3 @@ function corazones(e){
 
 </body>
 </html>
-
